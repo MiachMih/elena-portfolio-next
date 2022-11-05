@@ -1,26 +1,12 @@
-import React, { useRef } from "react";
+import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsInstagram } from "react-icons/bs";
 import { BsWhatsapp } from "react-icons/bs";
-import emailjs from "emailjs-com";
 import style from "./MessageMe.module.css";
+import { ToastProvider } from "react-toast-notifications";
+import ToastFormEN from "./ToastFormEN";
 
 function MessageMeEN() {
-  const form = useRef<HTMLFormElement | null>(null);
-  function sendEmail(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    if (form && form.current) {
-      emailjs.sendForm(
-        "service_mx9l8cb",
-        "template_xs1x5hf",
-        form.current,
-        "kdfJVk0qoNE6CfdHD"
-      );
-    }
-
-    e.currentTarget.reset();
-  }
-
   return (
     <div id="message" className={style.all}>
       <h2>Message Me</h2>
@@ -65,14 +51,9 @@ function MessageMeEN() {
             </a>
           </article> */}
         </div>
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name="name" placeholder="Full Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <textarea name="message" rows={7} placeholder="Message" required />
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
-        </form>
+        <ToastProvider>
+          <ToastFormEN />
+        </ToastProvider>
       </div>
     </div>
   );
