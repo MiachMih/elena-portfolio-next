@@ -9,7 +9,7 @@ import ReviewsEN from "../../components/Reviews/ReviewsEN";
 import FAQEN from "../../components/FAQ/FAQEN";
 import MessageMeEN from "../../components/MessageMe/MessageMeEN";
 import FooterEN from "../../components/Footer/FooterEN";
-import Certificates from "../../components/Certificates/Certificates";
+import CertificatesEN from "../../components/Certificates/CertificatesEN";
 
 function AppEn() {
   return (
@@ -19,7 +19,7 @@ function AppEn() {
       <PurposeEN />
       <AboutMeEN />
       <MissionEN />
-      <Certificates />
+      <CertificatesEN />
       <PricingEN />
       <ReviewsEN />
       <FAQEN />
