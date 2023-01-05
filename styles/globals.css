@@ -5,6 +5,7 @@ body {
   background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.7;
+  max-width: 1980px;
 }
 
 * {
@@ -65,4 +66,10 @@ html {
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-bg);
+}
+
+@media (min-width: 1980px) {
+  body {
+    margin: auto;
+  }
 }

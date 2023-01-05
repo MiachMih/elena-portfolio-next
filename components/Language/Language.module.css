@@ -5,7 +5,7 @@
 .content {
   position: absolute;
   right: 5%;
-  top: 5%;
+  top: 100px;
   z-index: 3;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .toggle .labels::after {
-  content: attr(data-off);
+  content: attr(data-ru);
   position: absolute;
   display: flex;
   justify-content: center;
@@ -54,7 +54,7 @@
 }
 
 .toggle .labels::before {
-  content: attr(data-on);
+  content: attr(data-en);
   position: absolute;
   display: flex;
   justify-content: center;

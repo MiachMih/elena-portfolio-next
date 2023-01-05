@@ -1,15 +1,102 @@
-import React from "react";
-import { AiFillPlayCircle } from "react-icons/ai";
+import React, { useRef, useState } from "react";
+import styles from "./Accordion.module.css";
 import style from "./Mission.module.css";
 import photo1 from "../../assets/photo_3.jpg";
 import photo2 from "../../assets/photo_4.jpg";
 import Image from "next/image";
+import styled from "styled-components";
 
 function MissionEN() {
   function navigate() {
     window.open(
       "https://calendly.com/coach-emotionalintelligence/introduction-session",
       "_blank"
+    );
+  }
+
+  interface DivProps {
+    clientHeight: number | undefined;
+    collapsed: boolean;
+  }
+
+  const Div = styled.div`
+    margin-top: 50px;
+    overflow: hidden;
+    height: ${({ clientHeight, collapsed = false }: DivProps) => {
+      let height = 0;
+      if (clientHeight !== undefined) height = clientHeight + 30;
+      return collapsed ? height + "px" : "0px";
+    }};
+    transition: all 600ms ease-in-out;
+  `;
+
+  function Accordion() {
+    const input = useRef<HTMLInputElement | null>(null);
+    const [showMore, setShowMore] = useState<boolean>(false);
+
+    return (
+      <div>
+        <button
+          className={`${styles.btn}`}
+          onClick={() => {
+            setShowMore((state) => {
+              return !state;
+            });
+          }}
+        >
+          {!showMore ? "Show More" : "Show Less"}
+        </button>
+        <Div clientHeight={input?.current?.clientHeight} collapsed={showMore}>
+          <div ref={input}>
+            <p>
+              With a combination of savvy and luck, I landed a job as a social
+              media management specialist at a reproductive clinic. It was a new
+              beginning for me, as well as the dawn of social media, when this
+              position was among the first of its kind. My main task was to
+              popularize the advanced medical option of in vitro fertilization
+              (IVF), addressing fears and diminishing any stigma surrounding it.
+              In this position, I was able to work more regular 9 to 5 hours and
+              leave the B2B magazine, while exploring and becoming adept in the
+              then new world of digital communication, online marketing, and
+              social media. I led strategic content projects, implemented
+              marketing campaigns and media business analytics for Fortune 500
+              partners, and spearheaded search engine optimization. This has
+              equipped me to understand the power of social media in how it can
+              impact your business and even your most personal life decisions.
+            </p>
+            <p>
+              Equipped with this further honed skill set, I was able to take the
+              leap and seize an opening at a Russian TV show based in the US.
+              There I developed a news program and its scripts as well as
+              managed advertisement projects. After working with one of our
+              program guests, an owner at New Horizons Medical, I was invited to
+              join their team first as an Office Manager for a completely new
+              branch office. In this role, I faced one of my biggest personal
+              and professional challenges as serving people in recovery from
+              substance abuse while simultaneously developing staff that could
+              effectively serve their needs in a very multicultural environment.
+            </p>
+            <p>
+              Over the course of a year and a half, through leveraging my
+              marketing background and consistently achieving high client
+              satisfaction with our services, I grew this branch’s clientele
+              numbers from zero to 400. I remained eager to deepen my own and my
+              staff’s ability to empathize with the struggles experienced by our
+              clients and to create personalized solutions for them, rather than
+              just mechanically following procedures that are only meant to
+              serve as guidelines, not rigid rules.
+            </p>
+            <p>
+              This led me down the path to the principles of coaching and
+              becoming trained in applying them. Drawing upon my overall
+              background and my formal training in coaching, I can aid you in
+              recognizing your own fount of knowledge, that you have the answers
+              within to guide you in taking your next steps to cultivate
+              wellness and create the life you want.
+            </p>
+          </div>
+        </Div>
+      </div>
     );
   }
 
@@ -30,26 +117,27 @@ function MissionEN() {
       <div className={style.content}>
         <h3>About Me</h3>
         <div className={style.text}>
-          <p>Hi! My name is Elena.</p>
-          <p>I was born in Moscow, Russia.</p>
           <p>
-            Received 2 bachelor&apos;s degrees in Psychology and Art at Moscow
-            University.
-          </p>
-          <p>Immigrated to the US in 2013</p>
-          <p>
-            Became a senior manager of a medical business in 2015. I utilize my
-            coaching skills at work with business partners to achieve company
-            goals. Provide operations and compliance training to the
-            administrative staff along with career coaching and Emotional
-            Intelligence training.
+            My love for communicating and connecting with people to help solve
+            life problems has deep roots. My father was a civil engineer and my
+            mother was a Russian language and literature teacher. After
+            graduating high school, I pursued a double major in psychology and
+            literature, during which time I volunteered at a women’s crisis
+            center and was hired as a middle school russian language and
+            literature teacher.
           </p>
           <p>
-            I am always inspired by my clients&apos; success. It gives me more
-            confidence in what I do. My clients have no chance of failure, they
-            always attain results. The main thing is to move forward. It&apos;s
-            better to get a magic kick in a session than from life!
+            Like so many people today, after I graduated university I
+            experienced the struggle of balancing work and family life with my
+            husband and two children. To put food on the table, my husband
+            worked long hours as a warehouse supervisor, and I worked over 8
+            hours a day as an editor and manager of a B2B magazine. In this
+            role, I visited numerous restaurants and hotels in person and
+            attended trade fairs, exhibits, and other networking events. Through
+            these interactions I gathered insights on the inner workings of
+            multiple businesses.
           </p>
+          <Accordion />
           <button className={style.btn} onClick={navigate}>
             Get Started
           </button>
