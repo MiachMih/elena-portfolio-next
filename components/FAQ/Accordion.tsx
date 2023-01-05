@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useRef, useState } from "react";
 import style from "./FAQ.module.css";
 import styled from "styled-components";
 

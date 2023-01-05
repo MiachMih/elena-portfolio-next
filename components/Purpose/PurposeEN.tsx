@@ -1,5 +1,4 @@
 import React from "react";
-import { AiFillPlayCircle } from "react-icons/ai";
 import style from "./Purpose.module.css";
 
 function PurposeEN() {
@@ -8,27 +7,27 @@ function PurposeEN() {
       <div className={style.content}>
         <h2>What is Coaching?</h2>
         <p>
-          Coaching is the key to mindfulness. And mindfulness helps us better
-          manage yourself.
+          A life coach helps to empower the client in making pivotal decisions
+          for themselves about their life, work, relationships, and more. Life
+          coaching is a collaborative conversation between the coach and client
+          that can enable profound change through questions, reflections,
+          choices, and new courses of action.
         </p>
 
         <p>
-          It is a partnership, a cooperation on a professional level. The goal
-          of which is to reach set goals. To achieve important in profeesional
-          and personal lives.
+          It can be challenging to recognize aspects of your life topography
+          that are especially key to informing your next steps. With the help of
+          a coach’s open, catalytic questions and deep listening, you can
+          explore blind spots below the surface that you may struggle to uncover
+          yourself, consider fresh perspectives, and identify new solutions.
         </p>
         <p>
-          Of everything that surrounds us, it is we ourselves who are in control
-          and can influence changes in our lives.
+          Working with a life coach can be a great way to discover and clarify
+          what you really want, and to unearth your skills, talents and gifts
+          that you can draw on to bring into reality what gives your life
+          meaning.
         </p>
-        <p>
-          It is important to see the connections between our thoughts, emotions,
-          feelings and actions. Together they form a single system, and any
-          system can be changed by changing one of its elements. Coaching helps
-          you find these relationships, understand the reasons behind them, and,
-          most importantly, find opportunities for change in order to become
-          happier and more successful, both professionally and personally.
-        </p>
+
         {/* <div className={style.video}>
           <a href="">Посмотреть Видео</a>
           <div className={style.icon}>

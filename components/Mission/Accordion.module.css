@@ -1,0 +1,13 @@
+.btn {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-text);
+  background: transparent;
+  transition: var(--transition);
+  padding-bottom: 3px;
+}
+
+.btn:hover {
+  box-shadow: rgba(168, 144, 120, 0.4) 0px 5px,
+    rgba(168, 144, 120, 0.3) 0px 10px, rgba(168, 144, 120, 0.2) 0px 15px,
+    rgba(168, 144, 120, 0.1) 0px 20px, rgba(168, 144, 120, 0.05) 0px 25px;
+}

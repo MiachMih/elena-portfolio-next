@@ -15,13 +15,13 @@ function Introduction() {
     <div className={style.container}>
       <div className={style.content}>
         <p>Discover the Power of Coaching</p>
-        <p>Hello! My name is Elena Shcherbakova.</p>
+        <p>Hello! My name is Elena Shcherbakova. I’m a life coach.</p>
         <p>
-          I am hired by leaders who are ready to take their performance and
-          career to the next level. As an executive coach with a focus on
-          leadership development, performance improvement and career
-          development, I help my clients gain awareness and take action to be
-          more effective AND fulfilled.
+          As a life coach I help to empower the client in making pivotal
+          decisions for themselves about their life, work, relationships, and
+          more. I create a collaborative conversation with my client that can
+          enable profound change through questions, reflections, choices, and
+          new courses of action.
         </p>
         <button className={style.btn} onClick={navigate}>
           Let&apos;s begin
