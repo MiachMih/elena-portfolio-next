@@ -20,7 +20,7 @@ function Pricing() {
           Вы рассказываете о себе только то,
           что считаете необходимо для выявления вашей цели и ее достижения.
           `}
-          price={"БЕСПЛАТНО"}
+          price={"$50"}
           link={"https://calendly.com/coach-emotionalintelligence/30min"}
         />
         <Card
@@ -29,7 +29,7 @@ function Pricing() {
           content={`
           Когда есть срочный запрос, а сроки уже все прошли. Надо все разложить по полочкам быстро и эффективно
           `}
-          price={"$300"}
+          price={"$500"}
           link={"https://calendly.com/coach-emotionalintelligence/60min"}
         />
         <Card
@@ -38,7 +38,7 @@ function Pricing() {
           content={`
           За это время сможете определить свои истинные ценности, определиться с важными задачами, составить долгосрочный план. найти ограничивающие установки, обрести мотивацию
           `}
-          price={"$950"}
+          price={"$1400"}
           link={"https://calendly.com/coach-emotionalintelligence/40"}
         />
         <Card
@@ -47,7 +47,7 @@ function Pricing() {
           content={`
           Время, достаточное для выявления и нахождения пути решения глобальной задачи, разрушения стереотипов, трансформационных изменений
           `}
-          price={"$1950"}
+          price={"$3000"}
           link={"https://calendly.com/coach-emotionalintelligence/10"}
         />
       </div>

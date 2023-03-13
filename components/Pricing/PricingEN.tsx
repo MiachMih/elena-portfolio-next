@@ -17,7 +17,7 @@ function PricingEN() {
           content={`
           During this session, we will meet each other and determine if coaching makes sense for you at this time, if so, which package is right for your goal.
           `}
-          price={"FREE"}
+          price={"$50"}
           link={
             "https://calendly.com/coach-emotionalintelligence/introduction-session"
           }
@@ -30,7 +30,7 @@ function PricingEN() {
           ou are in the right spot.
 
           `}
-          price={"$300"}
+          price={"$500"}
           link={
             "https://calendly.com/coach-emotionalintelligence/strategic-session"
           }
@@ -41,7 +41,7 @@ function PricingEN() {
           content={`
           During this time, you need to determine your true values, decide on important tasks, and take on a responsible plan. find limiting attitudes, gain motivation
           `}
-          price={"$950"}
+          price={"$1400"}
           link={"https://calendly.com/coach-emotionalintelligence/minimum-pack"}
         />
         <Card
@@ -50,7 +50,7 @@ function PricingEN() {
           content={`
           Time sufficient to discover and search for ways to solve a pretty global problem or achieve multiple goals, eliminate stereotypes, transformative changes.
           `}
-          price={"$1950"}
+          price={"$3000"}
           link={
             "https://calendly.com/coach-emotionalintelligence/package-optimist"
           }
