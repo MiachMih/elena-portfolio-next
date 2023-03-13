@@ -15,7 +15,7 @@ function AboutMeEN() {
     <div className={style.container}>
       <div className={style.pos}>
         <div className={style.content}>
-          <h2>Sign up for a introductory session</h2>
+          <h2>Sign up for an introductory session</h2>
           <p>Introductory 30-minute session</p>
           <p>Strategic session, find what troubles you</p>
           <p>Make a plan to realize your dreams</p>
