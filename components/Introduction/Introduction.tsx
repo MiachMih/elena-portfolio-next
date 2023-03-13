@@ -36,7 +36,7 @@ function Introduction() {
         <button className={style.btn} onClick={navigate}>
           Назначить Сессию
         </button>
-        <footer>30 минут ознакомительная сессия - бесплатно</footer>
+        <footer>30 минут ознакомительная сессия</footer>
       </div>
       <div>
         <Image src={photo} alt="Elena photo outside" className={style.photo} />
