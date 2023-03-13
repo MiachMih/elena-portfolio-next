@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <Language>
       <>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </>
     </Language>
   );
