@@ -15,12 +15,12 @@ function AboutMe() {
     <div className={style.container}>
       <div className={style.pos}>
         <div className={style.content}>
-          <h2>Запишись на бесплатную сессию</h2>
-          <p>Бесплатная 30-минутная сессия</p>
+          <h2>Запишись на ознакомительную сессию</h2>
+          <p>Ознакомительная 30-минутная сессия</p>
           <p>Стратегическая сессия, найди что тебя тревожит</p>
           <p>Составь план по реализации идей</p>
           <button className={style.btn} onClick={navigate}>
-            Бесплатная сессия
+            Ознакомительная сессия
           </button>
         </div>
         <Image
